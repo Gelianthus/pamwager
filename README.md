@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Precious Metals API
 
-## Getting Started
+A RESTful API built with Next.js (App Router), MongoDB Atlas, and Mongoose that provides weekly updated gold and silver prices for selected major economies.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This API exposes gold and silver prices per troy ounce for selected major countries.
+It supports country-level filtering, multiple country queries, HTTP caching, input validation, and database seeding.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project is designed as a backend-focused service and demonstrates clean API structure, proper database modeling, and performance optimizations.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+RESTful API architecture
 
-## Learn More
+MongoDB Atlas integration
 
-To learn more about Next.js, take a look at the following resources:
+Mongoose schemas with proper ObjectId references
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Country-based query filtering
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Multiple country query support
 
-## Deploy on Vercel
+API throttling via proxy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Input validation using Zod
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+CORS configuration
+
+HTTP caching (Cache-Control)
+
+Database seeding scripts
+
+TypeScript support
+
+## Supported Metals
+
+Gold
+
+Silver
+
+All prices are stored per troy ounce (ozt).
+
+## Supported Countries
+
+US, CN, IN, DE, FR, GB, CH, AE, HK, JP, AU, KR
+
+API Base Route
+/api/v1/precious-metals
+
+## Endpoints
+
+**Get Metadata**
+
+GET /api/v1/precious-metals
+
+Returns available metals along with their supported countries.
+
+**Get All Prices for a Metal**
+
+GET /api/v1/precious-metals/gold
+
+Returns prices for all supported countries for the specified metal.
+
+**Get Price for Specific Country Country**
+
+GET /api/v1/precious-metals/gold?country=US
+
+**Multiple Countries (repeating query parameter)**
+
+GET /api/v1/precious-metals/gold?country=US&country=IN
+
+## Security and Optimization
+
+- Zod-based query validation
+
+- CORS headers enabled
+
+- Proxy-based API throttling
+
+- HTTP caching
+
+- Lean MongoDB queries for improved performance
+
+- Proper ObjectId references for relational integrity
+
+## Tech Stack
+
+- Next.js (App Router)
+
+- TypeScript
+
+- MongoDB Atlas
+
+- Mongoose
+
+- Zod
+
+- Node.js
+
+## License
+
+MIT

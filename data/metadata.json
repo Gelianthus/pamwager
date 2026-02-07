@@ -1,0 +1,50 @@
+
+{
+  "metals": [
+    {
+      "metal": "gold",
+      "unit": {
+        "code": "troy_ounce",
+        "label": "Troy ounce",
+        "symbol": "ozt"
+      },
+      "supportedCountries": [
+        "US",
+        "CN",
+        "IN",
+        "DE",
+        "FR",
+        "GB",
+        "CH",
+        "AE",
+        "HK",
+        "JP",
+        "AU",
+        "KR"
+      ]
+    },
+    {
+      "metal": "silver",
+      "unit": {
+        "code": "troy_ounce",
+        "label": "Troy ounce",
+        "symbol": "ozt"
+      },
+      "supportedCountries": [
+        "US",
+        "CN",
+        "IN",
+        "DE",
+        "FR",
+        "GB",
+        "CH",
+        "AE",
+        "HK",
+        "JP",
+        "AU",
+        "KR"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-01-29T17:50:10.985Z"
+}

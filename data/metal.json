@@ -1,0 +1,71 @@
+{
+  "metal": "gold",
+  "unit": {
+    "code": "troy_ounce",
+    "label": "Troy ounce",
+    "symbol": "ozt"
+  },
+  "prices": [
+    {
+      "country": "US",
+      "currency": "USD",
+      "value": 4828.35
+    },
+    {
+      "country": "CN",
+      "currency": "CNY",
+      "value": 33656.4
+    },
+    {
+      "country": "IN",
+      "currency": "INR",
+      "value": 441941
+    },
+    {
+      "country": "DE",
+      "currency": "EUR",
+      "value": 4129.55
+    },
+    {
+      "country": "FR",
+      "currency": "EUR",
+      "value": 4129.55
+    },
+    {
+      "country": "GB",
+      "currency": "GBP",
+      "value": 3591.2
+    },
+    {
+      "country": "CH",
+      "currency": "CHF",
+      "value": 3831.65
+    },
+    {
+      "country": "AE",
+      "currency": "AED",
+      "value": 17734.5
+    },
+    {
+      "country": "HK",
+      "currency": "HKD",
+      "value": 37559.8
+    },
+    {
+      "country": "JP",
+      "currency": "JPY",
+      "value": 766180
+    },
+    {
+      "country": "AU",
+      "currency": "AUD",
+      "value": 7098.3
+    },
+    {
+      "country": "KR",
+      "currency": "KRW",
+      "value": 7088470
+    }
+  ],
+  "lastUpdated": "2026-01-25T08:34:04.693Z"
+}
